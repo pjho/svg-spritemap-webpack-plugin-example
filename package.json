@@ -1,18 +1,21 @@
 {
-  "name": "svg-plugin-test",
-  "version": "1.0.1",
+  "name": "html-webpack-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
   "scripts": {
-    "build": "webpack --config webpack.config.js"
+    "prebuild": "rm -rf dist",
+    "prewatch": "rm -rf dist",
+    "build": "webpack --config webpack/config.js",
+    "watch": "webpack watch --config webpack/config.js"
   },
+  "author": "",
+  "license": "ISC",
   "devDependencies": {
-    "css-loader": "^4.3.0",
-    "mini-css-extract-plugin": "^0.11.1",
-    "node-sass": "^4.14.1",
-    "sass-loader": "^10.0.5",
-    "style-loader": "^1.2.1",
-    "svg-spritemap-webpack-plugin": "^3.6.0",
-    "webpack": "^4.44.1",
-    "webpack-cli": "^3.3.11",
-    "webpack-manifest-plugin": "^2.2.0"
+    "@babel/core": "^7.13.10",
+    "svg-spritemap-webpack-plugin": "^3.9.0",
+    "webpack": "^5.24.4",
+    "webpack-cli": "^4.5.0",
+    "webpack-manifest-plugin": "^3.1.0"
   }
 }

@@ -12,7 +12,7 @@ module.exports = (env) => ({
     output: {
         publicPath: '/',
         path: path.resolve(__dirname, '../dist'),
-        filename: 'build/js/[name].[contenthash].js',
+        filename: 'build/js/[name].js',
     },
     module: {
         rules: [],
@@ -26,9 +26,9 @@ module.exports = (env) => ({
           path.resolve(__dirname, '..', 'src/icons/**/*.svg'),
           {
             output: {
-              filename: 'build/foo.[contenthash].svg',
+              filename: 'build/svgsp-filename.svg',
               chunk: {
-                'name': 'bar'
+                'name': 'svgsp-chunkname'
               }
             }
           }
